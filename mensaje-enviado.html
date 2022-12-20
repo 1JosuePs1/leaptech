@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <link rel="shortcut icon" href="./IMAGENEs/logo-final-recortado.png" />
+    <title>Compra realiza - TOURMALINE</title>
+
+    <link rel="stylesheet" href="./CSS/msEnviado.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2bfa4a668c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+
+    <script src="./assest/JS/script.js"></script>
+    <script src="./assest/JS/jquery-3.2.1.js"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="enviado">
+        <h1 class="titulo">Compra realizada con exito! Tu reservacion te llegara al correo registrado en tu cuenta.<i class="fas fa-check-circle"></i></h1>
+        <a class="link-contacto" href="./index.html">Ir a navegacion</a>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <script>
+        var $root = $('html, body');
+
+        $('a[href^="#"]').click(function () {
+            var href = $.attr(this, 'href');
+
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 2000, function () {
+                window.location.hash = href;
+            });
+
+            return false;
+        });
+    </script>
+</body>
+
+</html>
